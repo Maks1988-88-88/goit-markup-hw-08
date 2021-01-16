@@ -1,0 +1,19 @@
+
+.current-link {
+  color: $accent-color;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+  content: '';
+  font-size: 40px;
+  border-radius: 2px;
+  background: $accent-color;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  display: inline-block
+}
+}
