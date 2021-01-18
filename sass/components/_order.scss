@@ -1,21 +1,20 @@
-
-
 .order {
   background-image: linear-gradient(
                   rgba(47, 48, 58, 0.4),
                   rgba(47, 48, 58, 0.4)
-  ), url("../images/hero/img-hero.jpg");
+  ), url("../images/hero/hero-1x.jpg");
   background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
   display: flex;
-  min-height: 600px;
-  max-width: 1600px;
+  min-height: 400px;
+  max-width: 480px;
   margin: auto;
 }
 
 .order-content {
-  width: 696px;
-  padding: 200px 0;
+  width: 360px;
+  padding: 118px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,8 +24,8 @@
 .order-name {
   font-family: $main-font;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -41,6 +40,7 @@
   padding: 10px 32px;
   background: $accent-color;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+
   font-family: $main-font;
   font-weight: 700;
   font-size: 16px;
@@ -52,3 +52,127 @@
   cursor: pointer;
   border-radius: 4px;
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .order {
+    background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+    ), url("../images/hero/hero-2x.jpg")
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order {
+    background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+    ), url("../images/hero/hero_tablet-1x.jpg");
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .order {
+    background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+    ), url("../images/hero/hero_tablet-2x.jpg")
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .order {
+    background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+    ), url("../images/hero/hero_desk-1x.jpg");
+      min-height: 600px;
+      max-width: 1600px;
+  }
+
+  .order-content {
+    width: 696px;
+    padding: 200px 0;
+  }
+
+  .order-name {
+    font-size: 44px;
+    line-height: 1.363;
+  }
+}
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .order {
+    background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+    ), url("../images/hero/hero_desk-2x.jpg")
+  }
+}
+
+
+
+//================ old version =============
+
+//.order {
+//  background-image: linear-gradient(
+//                  rgba(47, 48, 58, 0.4),
+//                  rgba(47, 48, 58, 0.4)
+//  ), url("../images/hero/img-hero.jpg");
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//  display: flex;
+//  min-height: 600px;
+//  max-width: 1600px;
+//  margin: auto;
+//}
+
+//.order-content {
+//  width: 696px;
+//  padding: 200px 0;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: center;
+//}
+
+//.order-name {
+//  font-family: $main-font;
+//  font-weight: 900;
+//  font-size: 44px;
+//  line-height: 1.363;
+//  text-align: center;
+//  letter-spacing: 0.06em;
+//  text-transform: uppercase;
+//  color: #FFFFFF;
+//
+//  margin-bottom: 30px;
+//}
+
+//.order-btn {
+//  min-width: 200px;
+//  height: 50px;
+//  padding: 10px 32px;
+//  background: $accent-color;
+//  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+//  font-family: $main-font;
+//  font-weight: 700;
+//  font-size: 16px;
+//  line-height: 1.875;
+//  text-align: center;
+//  letter-spacing: 0.06em;
+//  color: #FFFFFF;
+//
+//  cursor: pointer;
+//  border-radius: 4px;
+//}
