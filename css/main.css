@@ -437,6 +437,11 @@ img {
   display: inline-block;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .current-link::before {
+    bottom: -8px;
+  }
+}
 .header {
   background: #FFFFFF;
 }
@@ -523,6 +528,10 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-container {
+  display: none;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .header {
     height: 60px;
@@ -530,10 +539,96 @@ img {
   }
 
   .header-mob-menu {
-    display: block;
+    display: inline-flex;
     margin-left: auto;
     border-style: none;
-    background: #FFFFFF;
+    padding: 0;
+    background-color: transparent;
+    width: 40px;
+  }
+  .header-mob-menu .icon-cross {
+    display: none;
+  }
+  .header-mob-menu.is-open .icon-cross {
+    display: block;
+  }
+  .header-mob-menu.is-open .icon-menu {
+    display: none;
+  }
+
+  .header-mob-img {
+    height: 40px;
+    fill: #212121;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 453px;
+    padding: 60px 0;
+    background-color: #FFFFFF;
+  }
+  .menu-container.is-open {
+    display: block;
+    z-index: 100;
+  }
+
+  .header-nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-nav-li-menu {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+    margin-bottom: 40px;
+  }
+
+  .current-link {
+    color: #2196F3;
+  }
+
+  .header-nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+  }
+
+  .header-address-nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-address-li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .header-address-link {
+    font-size: 18px;
+    line-height: 1.166;
+  }
+
+  .icon-vector {
+    width: 10px;
+    height: 15px;
+  }
+
+  .icon-envelope {
+    width: 16px;
+    height: 11px;
   }
 
   .header-nav-wpapper {

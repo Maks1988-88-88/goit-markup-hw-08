@@ -17,3 +17,10 @@
   display: inline-block
 }
 }
+
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .current-link::before {
+    bottom: -8px;
+  }
+}
