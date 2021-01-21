@@ -1131,8 +1131,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 44px;
-  max-height: 44px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1186,6 +1186,12 @@ img {
   .our-team-image {
     max-width: 354px;
     height: 374px;
+  }
+
+  .team-social-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 74px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
