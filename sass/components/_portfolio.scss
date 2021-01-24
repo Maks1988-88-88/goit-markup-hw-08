@@ -93,16 +93,22 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 362px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
-  .portfolio-btn-pos:not(:last-child) {
-    margin-right: 8px;
 
-    &:nth-child(3n) {
-      margin-right: 0;
+  .portfolio-btn-pos{
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
     }
   }
+
 
   .portfolio-img-position {
     display: flex;

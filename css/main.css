@@ -1586,9 +1586,12 @@ img {
     display: flex;
     flex-wrap: wrap;
     max-width: 362px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
+  .portfolio-btn-pos {
+    margin-bottom: 15px;
+  }
   .portfolio-btn-pos:not(:last-child) {
     margin-right: 8px;
   }
